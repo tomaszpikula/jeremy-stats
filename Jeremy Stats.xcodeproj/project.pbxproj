@@ -19,6 +19,8 @@
 		D64E48F32BFFCFCC00E291D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D64E48F52BFFCFCF00E291D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D64E48F82BFFCFCF00E291D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D64E48FF2BFFD3E100E291D6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D64E49002BFFD62000E291D6 /* Jeremy-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Jeremy-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		D64E48F02BFFCFCC00E291D6 /* Jeremy Stats */ = {
 			isa = PBXGroup;
 			children = (
+				D64E49002BFFD62000E291D6 /* Jeremy-Stats-Info.plist */,
 				D64E48F12BFFCFCC00E291D6 /* Jeremy_StatsApp.swift */,
 				D64E48F32BFFCFCC00E291D6 /* ContentView.swift */,
+				D64E48FF2BFFD3E100E291D6 /* Config.xcconfig */,
 				D64E48F52BFFCFCF00E291D6 /* Assets.xcassets */,
 				D64E48F72BFFCFCF00E291D6 /* Preview Content */,
 			);
@@ -147,6 +151,7 @@
 /* Begin XCBuildConfiguration section */
 		D64E48FA2BFFCFCF00E291D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64E48FF2BFFD3E100E291D6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -210,6 +215,7 @@
 		};
 		D64E48FB2BFFCFCF00E291D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64E48FF2BFFD3E100E291D6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -274,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Jeremy Stats/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jeremy-Stats-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Jeremy Stats/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jeremy-Stats-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
