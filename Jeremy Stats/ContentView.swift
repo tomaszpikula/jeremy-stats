@@ -9,20 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var players = [Player]()
     var dataService = DataService()
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(String(players.count))
         }
         .padding()
         .onAppear(perform: {
             Task {
-                await dataService.playersByTeam()
-            }
+                await players = dataService.playersByTeam()
+                print(players)            }
         })
     }
 }

@@ -11,10 +11,10 @@ struct DataService {
     
     let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
     
-    func playersByTeam() async {
+    func playersByTeam() async -> [Player] {
         
         guard apiKey != nil else {
-            return
+            return [Player]()
         }
         
         if let url = URL(string: "https://api.sportsdata.io/v3/nba/scores/json/Players/SA?key=\(apiKey!)") {
@@ -24,12 +24,17 @@ struct DataService {
             do {
                 let (data, response) = try await URLSession.shared.data(for: request)
                 
-                print(data)
-                print(response)
+                let decoder = JSONDecoder()
+                let result = try decoder.decode([Player].self, from: data)
+                
+                return result
+                
             }
             catch{
                 print(error)
             }
         }
+        
+        return [Player]()
     }
 }

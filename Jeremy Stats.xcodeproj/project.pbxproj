@@ -11,6 +11,7 @@
 		D64E48F42BFFCFCC00E291D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64E48F32BFFCFCC00E291D6 /* ContentView.swift */; };
 		D64E48F62BFFCFCF00E291D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64E48F52BFFCFCF00E291D6 /* Assets.xcassets */; };
 		D64E48F92BFFCFCF00E291D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64E48F82BFFCFCF00E291D6 /* Preview Assets.xcassets */; };
+		D677BEAC2C00F3E2006AFC9F /* PlayerByTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677BEAB2C00F3E2006AFC9F /* PlayerByTeam.swift */; };
 		D6AD2F0E2C008DED00189825 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AD2F0D2C008DED00189825 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		D64E48F82BFFCFCF00E291D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D64E48FF2BFFD3E100E291D6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D64E49002BFFD62000E291D6 /* Jeremy-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Jeremy-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D677BEAB2C00F3E2006AFC9F /* PlayerByTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerByTeam.swift; sourceTree = "<group>"; };
 		D6AD2F0D2C008DED00189825 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 				D64E48F12BFFCFCC00E291D6 /* Jeremy_StatsApp.swift */,
 				D64E48F32BFFCFCC00E291D6 /* ContentView.swift */,
 				D6AD2F0D2C008DED00189825 /* DataService.swift */,
+				D677BEAB2C00F3E2006AFC9F /* PlayerByTeam.swift */,
 				D64E48FF2BFFD3E100E291D6 /* Config.xcconfig */,
 				D64E48F52BFFCFCF00E291D6 /* Assets.xcassets */,
 				D64E48F72BFFCFCF00E291D6 /* Preview Content */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D677BEAC2C00F3E2006AFC9F /* PlayerByTeam.swift in Sources */,
 				D64E48F42BFFCFCC00E291D6 /* ContentView.swift in Sources */,
 				D6AD2F0E2C008DED00189825 /* DataService.swift in Sources */,
 				D64E48F22BFFCFCC00E291D6 /* Jeremy_StatsApp.swift in Sources */,
@@ -282,6 +286,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jeremy Stats/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Jeremy-Stats-Info.plist";
@@ -311,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jeremy Stats/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Jeremy-Stats-Info.plist";
