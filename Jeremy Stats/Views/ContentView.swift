@@ -12,19 +12,29 @@ struct ContentView: View {
     @Environment (DataModel.self) var model
     
     var body: some View {
-        VStack {
-            Text(String(model.players.count))
-            ForEach (model.players) {player in
-                Text (String(player.jersey ?? 000 ))
-            }
+        TabView {
+            PlayerInfoView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.fill")
+                        Text("Player")
+                    }
+                }
+            TeamInfoView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.3.fill")
+                        Text("Team")
+                    }
+                }
         }
-        .padding()
         .onAppear {
-            model.loadPlayerInfo()
+            //model.loadPlayerInfo()
         }
     }
 }
 
 #Preview {
     ContentView()
+        .environment(DataModel())
 }
