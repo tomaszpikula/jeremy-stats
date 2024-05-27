@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Jeremy_StatsApp: App {
+    
+    @State var model = DataModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(model)
         }
     }
 }

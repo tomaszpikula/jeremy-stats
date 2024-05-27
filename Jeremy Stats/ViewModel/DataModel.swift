@@ -6,12 +6,30 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct DataService {
+
+@Observable
+class DataModel {
+    
+    var players = [Player]()
+    var jeremy = Player()
+    var jeremyIndex = 0
+    
+    func loadPlayerInfo() {
+        
+        Task {
+            await players = getPlayerInfo()
+            jeremyIndex = players.firstIndex(where: {$0.id == 20002881}) ?? 0
+            jeremy = players[jeremyIndex]
+            print(jeremy)
+        }
+        
+    }
     
     let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
     
-    func playersByTeam() async -> [Player] {
+    func getPlayerInfo() async -> [Player] {
         
         guard apiKey != nil else {
             return [Player]()
@@ -22,7 +40,7 @@ struct DataService {
             var request = URLRequest(url: url)
             
             do {
-                let (data, response) = try await URLSession.shared.data(for: request)
+                let (data, _) = try await URLSession.shared.data(for: request)
                 
                 let decoder = JSONDecoder()
                 let result = try decoder.decode([Player].self, from: data)
