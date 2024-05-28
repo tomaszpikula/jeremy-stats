@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D61A180C2C050F3600537539 /* PlayerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61A180B2C050F3600537539 /* PlayerInfoView.swift */; };
 		D61A180E2C0510B300537539 /* TeamInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61A180D2C0510B200537539 /* TeamInfoView.swift */; };
+		D63C95B62C05999900217091 /* GeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C95B52C05999900217091 /* GeneralInfoView.swift */; };
+		D63C95B82C0599B300217091 /* SeasonStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C95B72C0599B300217091 /* SeasonStatsView.swift */; };
+		D63C95BA2C059BCC00217091 /* RosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C95B92C059BCC00217091 /* RosterView.swift */; };
+		D63C95BC2C059BE800217091 /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C95BB2C059BE800217091 /* StandingsView.swift */; };
 		D64E48F22BFFCFCC00E291D6 /* Jeremy_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64E48F12BFFCFCC00E291D6 /* Jeremy_StatsApp.swift */; };
 		D64E48F42BFFCFCC00E291D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64E48F32BFFCFCC00E291D6 /* ContentView.swift */; };
 		D64E48F62BFFCFCF00E291D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64E48F52BFFCFCF00E291D6 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* Begin PBXFileReference section */
 		D61A180B2C050F3600537539 /* PlayerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoView.swift; sourceTree = "<group>"; };
 		D61A180D2C0510B200537539 /* TeamInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoView.swift; sourceTree = "<group>"; };
+		D63C95B52C05999900217091 /* GeneralInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoView.swift; sourceTree = "<group>"; };
+		D63C95B72C0599B300217091 /* SeasonStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonStatsView.swift; sourceTree = "<group>"; };
+		D63C95B92C059BCC00217091 /* RosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterView.swift; sourceTree = "<group>"; };
+		D63C95BB2C059BE800217091 /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
 		D64E48EE2BFFCFCC00E291D6 /* Jeremy Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jeremy Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64E48F12BFFCFCC00E291D6 /* Jeremy_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jeremy_StatsApp.swift; sourceTree = "<group>"; };
 		D64E48F32BFFCFCC00E291D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,8 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				D64E48F32BFFCFCC00E291D6 /* ContentView.swift */,
-				D61A180B2C050F3600537539 /* PlayerInfoView.swift */,
-				D61A180D2C0510B200537539 /* TeamInfoView.swift */,
+				D63C95B32C05993B00217091 /* Player */,
+				D63C95B42C05995900217091 /* Team */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -66,6 +74,26 @@
 				D677BEAB2C00F3E2006AFC9F /* Player.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D63C95B32C05993B00217091 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				D61A180B2C050F3600537539 /* PlayerInfoView.swift */,
+				D63C95B52C05999900217091 /* GeneralInfoView.swift */,
+				D63C95B72C0599B300217091 /* SeasonStatsView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		D63C95B42C05995900217091 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				D61A180D2C0510B200537539 /* TeamInfoView.swift */,
+				D63C95B92C059BCC00217091 /* RosterView.swift */,
+				D63C95BB2C059BE800217091 /* StandingsView.swift */,
+			);
+			path = Team;
 			sourceTree = "<group>";
 		};
 		D64E48E52BFFCFCC00E291D6 = {
@@ -177,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63C95BC2C059BE800217091 /* StandingsView.swift in Sources */,
 				D677BEAC2C00F3E2006AFC9F /* Player.swift in Sources */,
 				D64E48F42BFFCFCC00E291D6 /* ContentView.swift in Sources */,
+				D63C95B62C05999900217091 /* GeneralInfoView.swift in Sources */,
+				D63C95BA2C059BCC00217091 /* RosterView.swift in Sources */,
+				D63C95B82C0599B300217091 /* SeasonStatsView.swift in Sources */,
 				D61A180C2C050F3600537539 /* PlayerInfoView.swift in Sources */,
 				D61A180E2C0510B300537539 /* TeamInfoView.swift in Sources */,
 				D6AD2F0E2C008DED00189825 /* DataModel.swift in Sources */,
