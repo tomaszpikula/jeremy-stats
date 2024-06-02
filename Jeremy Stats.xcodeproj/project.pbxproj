@@ -18,6 +18,7 @@
 		D64E48F62BFFCFCF00E291D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64E48F52BFFCFCF00E291D6 /* Assets.xcassets */; };
 		D64E48F92BFFCFCF00E291D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64E48F82BFFCFCF00E291D6 /* Preview Assets.xcassets */; };
 		D677BEAC2C00F3E2006AFC9F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677BEAB2C00F3E2006AFC9F /* Player.swift */; };
+		D67F25492C0D05B800FA4E19 /* SingleStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67F25482C0D05B800FA4E19 /* SingleStatView.swift */; };
 		D6AD2F0E2C008DED00189825 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AD2F0D2C008DED00189825 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		D64E48FF2BFFD3E100E291D6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D64E49002BFFD62000E291D6 /* Jeremy-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Jeremy-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D677BEAB2C00F3E2006AFC9F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D67F25482C0D05B800FA4E19 /* SingleStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStatView.swift; sourceTree = "<group>"; };
 		D6AD2F0D2C008DED00189825 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				D61A180B2C050F3600537539 /* PlayerInfoView.swift */,
 				D63C95B52C05999900217091 /* GeneralInfoView.swift */,
 				D63C95B72C0599B300217091 /* SeasonStatsView.swift */,
+				D67F25482C0D05B800FA4E19 /* SingleStatView.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63C95BC2C059BE800217091 /* StandingsView.swift in Sources */,
+				D67F25492C0D05B800FA4E19 /* SingleStatView.swift in Sources */,
 				D677BEAC2C00F3E2006AFC9F /* Player.swift in Sources */,
 				D64E48F42BFFCFCC00E291D6 /* ContentView.swift in Sources */,
 				D63C95B62C05999900217091 /* GeneralInfoView.swift in Sources */,

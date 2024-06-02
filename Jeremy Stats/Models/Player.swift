@@ -11,12 +11,15 @@ struct Player: Identifiable, Decodable {
     var id: Int?
     var jersey: Int?
     var salary: Int?
+    var experience: Int?
     
     enum CodingKeys: String, CodingKey {
         
         case id = "PlayerID"
         case jersey = "Jersey"
         case salary = "Salary"
+        case experience = "Experience"
+
         
     }
 }

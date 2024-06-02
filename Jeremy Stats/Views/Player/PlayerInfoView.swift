@@ -16,20 +16,24 @@ struct PlayerInfoView: View {
         
         @Bindable var model = model
         
-        VStack {
-            Picker("", selection: $playerSelectedTab) {
-                Text("General Info")
-                    .tag(0)
-                Text("Season Stats")
-                    .tag(1)
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            
-            if playerSelectedTab == 0 {
-                GeneralInfoView()
-            }
-            else {
-                SeasonStatsView()
+        ZStack {
+            Color(.black)
+                .ignoresSafeArea()
+            VStack {
+                Picker("", selection: $playerSelectedTab) {
+                    Text("General Info")
+                        .tag(0)
+                    Text("Season Stats")
+                        .tag(1)
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                
+                if playerSelectedTab == 0 {
+                    GeneralInfoView()
+                }
+                else {
+                    SeasonStatsView()
+                }
             }
         }
     }

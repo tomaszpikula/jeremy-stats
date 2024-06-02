@@ -29,7 +29,7 @@ struct ContentView: View {
                 }
         }
         .onAppear {
-            //model.loadPlayerInfo()
+            model.loadPlayerInfo()
         }
     }
 }

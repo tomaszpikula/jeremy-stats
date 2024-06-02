@@ -9,7 +9,18 @@ import SwiftUI
 
 struct SeasonStatsView: View {
     var body: some View {
-        Text("Season Stats View")
+        ZStack {
+            Color(.black)
+                .ignoresSafeArea()
+            ScrollView {
+                VStack{
+                    Text("Season Stats")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .bold()
+                }
+            }
+        }
+        .foregroundStyle(.white)
     }
 }
 
