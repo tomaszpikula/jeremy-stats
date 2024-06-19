@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SeasonStatsView: View {
+    
+    @Environment (DataModel.self) var model
     var body: some View {
         ZStack {
             Color(.black)
@@ -17,6 +19,7 @@ struct SeasonStatsView: View {
                     Text("Season Stats")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .bold()
+                    SingleStatView(statName: "Jersey", statValue: String(model.jeremy.jersey ?? 0))
                 }
             }
         }
@@ -26,4 +29,5 @@ struct SeasonStatsView: View {
 
 #Preview {
     SeasonStatsView()
+        .environment(DataModel())
 }

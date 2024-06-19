@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SingleStatView: View {
     
-    @State var statName: String
-    @State var statValue: String
+    var statName: String
+    var statValue: String
     
     var body: some View {
         ZStack {
